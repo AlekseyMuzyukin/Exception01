@@ -1,8 +1,8 @@
 public class Example03 {
-    
+
     public static void main(String[] args) {
-        int[][] arr1 = new int[][]{{2, 4}, {5, 7}};
-        int[][] arr2 = new int[][]{{1, 3}, {3, 3}};
+        int[][] arr1 = new int[][] { { 2, 4 }, { 5, 7 } };
+        int[][] arr2 = new int[][] { { 1, 3 }, { 3, 3 } };
         int[][] arr3 = quotientArray(arr1, arr2);
         print2DArray(arr3);
     }
@@ -15,7 +15,7 @@ public class Example03 {
             throw new RuntimeException("Размеры массивов не равны");
         }
         for (int i = 0; i < array1.length; i++) {
-            if (array1[i].length != array2[i].length){
+            if (array1[i].length != array2[i].length) {
                 throw new RuntimeException("Размеры массивов не равны");
             }
         }
@@ -34,7 +34,8 @@ public class Example03 {
         }
         return resultArray;
     }
-    public static void print2DArray(int[][] array){
+
+    public static void print2DArray(int[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
                 System.out.print(array[i][j] + " ");
